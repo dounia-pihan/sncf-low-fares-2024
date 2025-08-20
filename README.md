@@ -42,7 +42,16 @@ Measure how SNCF fares vary across routes, regions and fare profiles, and identi
 ## 4 - Results
 - Students benefit from significantly cheaper fares (0.3–0.5 €/km)  
 - Some regions (e.g. **Centre-Val de Loire**) are less accessible than others  
-- Student fares show strong consistency across regions  
+- Student fares show strong consistency across regions
+
+
+  **Key visualizations:**  
+
+### Geographic distribution of fares (map)
+![Geographic distribution of fares](Graphs/Geographic%distribution%of%fares%(map).jpg)
+
+### Average fares by region (bar chart)
+![Average fares by region](Graphs/Average%fares%by%region%(bar%chart).jpg)
 
 ---
 
