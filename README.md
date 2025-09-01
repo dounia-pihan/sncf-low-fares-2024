@@ -1,12 +1,12 @@
 # 🚆 SNCF Low Fares 2024 – Data Sprint
 
 Data analysis project on SNCF open datasets, identifying the most affordable train routes in France (TGV INOUI & OUIGO).  
-Includes data cleaning, feature engineering (distance, regions), and visualizations to compare fares across routes and profiles.  
+Includes data cleaning, feature engineering (distance, regions), and visualizations to compare average fares per kilometre across French regions.  
 
 ---
 
 ## 1 - Objective
-Measure how SNCF fares vary across routes, regions and fare profiles, and identify which destinations are the most (or least) affordable in €/km.  
+Measure how SNCF fares vary geographically by calculating the average fare per kilometre (€/km) by destination region, and identify which destinations are the most and least affordable.  
 
 ## 2 - Data Sources
 
@@ -25,7 +25,8 @@ Measure how SNCF fares vary across routes, regions and fare profiles, and identi
 ## 3 - Methodology
 
 **Corpus preparation**  
-- Added columns from external datasets:  
+- Converted SNCF fares into fare per kilomtre
+- Merged with station metadata to link each destination station to its region. Added columns from external datasets:  
   - *Region Name* (from SNCF station locations dataset)  
   - *Fare per km* (from CO₂ emissions dataset)  
   - *Geopoint* (lat/long from station dataset)  
@@ -34,16 +35,15 @@ Measure how SNCF fares vary across routes, regions and fare profiles, and identi
 **Analysis & visualization**  
 - Map stations geographically and associate each with a region  
 - Retrieve regional boundaries via GeoJSON  
-- Compute average **fare per km per region**  
+- Compute average **fare per km per by destination region**  
 - Rank regions from most to least expensive  
 
 ---
 
 ## 4 - Results
-- Students benefit from significantly cheaper fares (0.3–0.5 €/km)  
-- Some regions (e.g. **Centre-Val de Loire**) are less accessible than others  
-- Student fares show strong consistency across regions
-
+•	Clear regional differences by destination:
+	•	Trips to Hauts-de-France, Île-de-France, Auvergne-Rhône-Alpes are the most expensive (≈ 0.26 €/km).
+	•	Trips to Pays de la Loire, Nouvelle-Aquitaine, Bourgogne-Franche-Comté are the least expensive (< 0.20 €/km).
 
   **Key visualizations:**  
 
@@ -55,14 +55,23 @@ Measure how SNCF fares vary across routes, regions and fare profiles, and identi
 
 ---
 
-## 5 - Next Steps
+## 5 - Discussion
+
+The observed regional disparities (≈ €0.09/km between cheapest and most expensive destinations) confirm that SNCF fares ares not driven only by distance. 
+As Finez (2014) shows, pricing results from a shift towards yield management, where fares adapt to demand.
+Similarly, Alet (2009) highlights the opacity of SNCF pricing, which conceals marked territorials inequalities. 
+Our results reflect this: high-demand regions (Île-de-France, Auvergne-Rhône-Alpes) are structurally more expensive, while others remain more affordable. 
+
+---
+
+## 6 - Next Steps
 - Extend analysis with a temporal dimension (evolution of fares over time)  
 - Compare SNCF fares with other transport modes (bus, car, plane)  
 - Explore sociological implications of regional fare inequalities (urban vs rural)  
 
 ---
 
-## 6 - References
+## 7 - References
 - C. Alet (2009). *SNCF : un prix peut en cacher un autre*, Alternatives Économiques.  
 - J. Finez (2014). *La construction des prix à la SNCF, une socio-histoire de la tarification*, Revue française de sociologie, pp. 5–39.  
 
