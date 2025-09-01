@@ -48,10 +48,10 @@ Measure how SNCF fares vary geographically by calculating the average fare per k
   **Key visualizations:**  
 
 ### Geographic distribution of fares (map)
-![Gegraphic distribution of fares](Graphs/Geographic_distribution_of_fares_(map).png)
+![Gegraphic distribution of fares](02_Graphs/Geographic_distribution_of_fares_(map).png)
 
 ### Average fares by region (bar chart)
-![Average fares by region](Graphs/Average_fares_by_region_(bar_chart).png)
+![Average fares by region](02_Graphs/Average_fares_by_region_(bar_chart).png)
 
 ---
 
