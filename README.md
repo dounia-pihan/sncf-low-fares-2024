@@ -1,6 +1,6 @@
-# 🚆 SNCF Low Fares 2024 – Data Sprint
+# 🚆 SNCF Low Fares 2024 – Data Sprint (*academic project*)
 
-Data analysis project on SNCF open datasets, identifying the most affordable train routes in France (TGV INOUI & OUIGO).  
+Data analysis project on SNCF open datasets, focusing on the geography of trains fares in France (TGV INOUI & OUIGO).  
 Includes data cleaning, feature engineering (distance, regions), and visualizations to compare average fares per kilometre across French regions.  
 
 ---
