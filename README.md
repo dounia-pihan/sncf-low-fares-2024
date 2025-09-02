@@ -1,5 +1,10 @@
 # 🚆 SNCF Low Fares 2024 – Data Sprint (*academic project*)
 
+![Python](https://img.shields.io/badge/Python-3.9-blue)  
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-lightblue)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)  
+![GeoPandas](https://img.shields.io/badge/GeoPandas-Geospatial-green)   
+
 Data analysis project on SNCF open datasets, focusing on the geography of trains fares in France (TGV INOUI & OUIGO).  
 Includes data cleaning, feature engineering (distance, regions), and visualizations to compare average fares per kilometre across French regions.  
 
