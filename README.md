@@ -11,6 +11,7 @@ Includes data cleaning, feature engineering (distance, regions), and visualizati
 ---
 
 ## 1 - Objective
+
 Measure how SNCF fares vary geographically by calculating the average fare per kilometre (€/km) by destination region, and identify which destinations are the most and least affordable.  
 
 ## 2 - Data Sources
